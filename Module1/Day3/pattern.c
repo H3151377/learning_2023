@@ -1,5 +1,5 @@
 #include <stdio.h>
-void right_triangle(int l){
+void RTriangle(int l){
     for(int j=l;j>=1;j--)
     {
         printf("%d",j);  
@@ -13,7 +13,7 @@ void spaces(int i){
     }
     
 }
-void left_traingle(int n){
+void Ltriangle(int n){
     int l=n;
     for(int i=1;i<=n;i++)
     {
@@ -22,7 +22,7 @@ void left_traingle(int n){
             printf("%d",n-j+1);
         }
         spaces(i);
-        right_triangle(l--);
+        RTriangle(l--);
     }
 }
 int main()
@@ -30,6 +30,6 @@ int main()
     int n;
     printf("\n Enter value:");
     scanf("%d",&n);
-    left_traingle(n);
+    Ltriangle(n);
     return 0;
 }

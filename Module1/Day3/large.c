@@ -1,20 +1,20 @@
 #include <stdio.h>
-int delete(int n) {
+int del(int n) {
     int l=0;
     int num=n;
-    int divisor=1;
-    while (divisor<=num) {
-        int rem= (num/(divisor*10))*divisor+ (num% divisor);
+    int div=1;
+    while (div<=num) {
+        int rem= (num/(div*10))*div+ (num% div);
         if (rem> l) {
             l = rem;
         }
-        divisor *= 10;
+        div *= 10;
     }
 
     return l;
 }
 int main() {
-    int n,l,large;
+    int n,l,Lar;
     printf("Enter a n value: ");
     scanf("%d",&n);
     for(int i=0;i<n;i++){
@@ -24,8 +24,8 @@ int main() {
     printf("\nNot a 4 digit number");
     }
     else{
-        large=delete(l);
-        printf("\nafter deleting: %d",large);
+        Lar=del(l);
+        printf("\nafter deleting: %d",Lar);
     }
     }
     return 0;

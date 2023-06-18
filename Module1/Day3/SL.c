@@ -1,5 +1,5 @@
 #include <stdio.h>
-void smallandlarge(int n){
+void SandL(int n){
     int small=9;
     int large=0;
     while(n!=0) {
@@ -24,7 +24,7 @@ int main()
             printf("\nnot valid");
         }
         else{
-            smallandlarge(a);
+            SandL(a);
         }
     }
     
